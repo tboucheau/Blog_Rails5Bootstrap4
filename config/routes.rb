@@ -6,7 +6,10 @@ Rails.application.routes.draw do
 
 	# expecting /author/posts/:id
 	namespace :authors do
-		resources :posts
+		resources :posts do
+			put 'publish' => 'posts#publish', on: :member
+			put 'unpublish' => 'posts#unpublish', on: :member
+		end
 	end
 
 	# not expecting anything
