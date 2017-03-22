@@ -55,3 +55,5 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 
 gem 'annotate'
+
+gem 'will_paginate', '~> 3.1.0'
